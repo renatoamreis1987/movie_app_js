@@ -2,14 +2,14 @@
 
 ## About The Project
 
-Add description here !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Movie Fight is an application to compare 2 movies. 
 
 [Project on GitHub Pages](https://github.com/renatoamreis1987/movie_app_js)
 
 ## Built With
 
-- [Picture-in-Picture Web API](https://css-tricks.com/an-introduction-to-the-picture-in-picture-web-api/)
-- [Screen Capture API](https://developer.mozilla.org/en-US/docs/Web/API/Screen_Capture_API/Using_Screen_Capture)
+- [OMDb API](http://omdbapi.com/)
+
 
 <!-- ROADMAP -->
 
@@ -25,7 +25,7 @@ Renato Reis - [@RenatoAMReis](https://twitter.com/RenatoAMReis)
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## Zero to Mastery Academy Credits
+## Credits
 
 This project is part of the "The Modern Javascript Bootcamp Course".
 
