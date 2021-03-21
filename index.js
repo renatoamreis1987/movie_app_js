@@ -1,4 +1,6 @@
 // AutoComplete Config Standard for any possibility !!
+const proxyUrl = "https://api-server-rr.herokuapp.com/"
+const apiUrl = "http://www.omdbapi.com/"
 
 const autoCompleteConfig = {
   renderOption(movie) {
@@ -13,8 +15,6 @@ const autoCompleteConfig = {
     return movie.Title;
   },
   async fetchData(searchTerm) {
-    const proxyUrl = "https://api-server-rr.herokuapp.com/"
-    const apiUrl = "http://www.omdbapi.com/"
     const response = await axios.get(proxyUrl + apiUrl, {
       params: {
         apikey: "3ec8bebd",
@@ -52,7 +52,7 @@ createAutoComplete({
 let leftMovie;
 let rightMovie;
 const onMovieSelect = async (movie, summaryElement, side) => {
-  const response = await axios.get("http://www.omdbapi.com/", {
+  const response = await axios.get(proxyUrl + apiUrl, {
     params: {
       apikey: "3ec8bebd",
       i: movie.imdbID,
