@@ -13,7 +13,9 @@ const autoCompleteConfig = {
     return movie.Title;
   },
   async fetchData(searchTerm) {
-    const response = await axios.get("http://www.omdbapi.com/", {
+    const proxyUrl = "https://api-server-rr.herokuapp.com/"
+    const apiUrl = "http://www.omdbapi.com/"
+    const response = await axios.get(proxyUrl + apiUrl, {
       params: {
         apikey: "3ec8bebd",
         s: searchTerm,
